@@ -113,7 +113,7 @@ function App() {
       <header 
         className="relative min-h-screen flex items-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://landing-page-backend.s3.ap-south-1.amazonaws.com/blog_page_prodimages/5ef1fadb-73d6-45fa-843d-ab6cf93f1f56/shutterstock_1937153053-1_xl.png')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/background.png')`
         }}
       >
          <div className="container mx-auto px-6 py-24 relative">
