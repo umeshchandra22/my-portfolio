@@ -121,7 +121,7 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-8 border-white/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQFNyKhFewEM9w/profile-displayphoto-shrink_800_800/B56ZVBsMXCHoAc-/0/1740563859334?e=1746057600&v=beta&t=vCpeDWQTPABXe68DB_BZvUxHqJ7g7g39mTsuENHqDRA"
+                  src="https://github.com/umeshchandra22/my-portfolio/blob/main/public/ProfilePic.png"
                   alt="Sai Umesh Chandra Katta"
                   className="w-full h-full object-cover"
                   onError={(e) => {
