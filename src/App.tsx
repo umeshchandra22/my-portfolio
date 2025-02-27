@@ -121,7 +121,7 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-8 border-white/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/public/ProfilePic.png"
+                  src="/ProfilePic.png"
                   alt="Sai Umesh Chandra Katta"
                   className="w-full h-full object-cover"
                   onError={(e) => {
