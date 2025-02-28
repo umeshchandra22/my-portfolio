@@ -54,13 +54,15 @@ const styles = StyleSheet.create({
   company: {
     fontSize: 12,
     fontStyle: 'italic',
+	fontWeight: 'bold',
     marginBottom: 5,
     color: '#007BFF', // Changed color to a blue shade for emphasis
   },
   date: {
     fontSize: 12,
-    color: '#666666',
-    marginBottom: 10,
+    fontWeight: 'bold',
+    marginBottom: 2, // Reduced margin for better spacing
+    color: '#333333', // Darker color for better visibility
   },
 });
 
@@ -94,8 +96,8 @@ const Resume = () => (
         <Text style={styles.sectionTitle}>Professional Experience</Text>
         
         <View style={styles.content}>
-          <Text style={styles.jobTitle}>Siemens Mobility</Text>
-          <Text style={styles.company}>PLM Data Migration Consultant</Text>
+          <Text style={styles.company}>Siemens Mobility</Text>
+          <Text style={styles.jobTitle}>PLM Data Migration Consultant</Text>
           <Text style={styles.date}>August 2022 - Present</Text>
           <Text style={styles.bullet}>• Developed scripts in Python for automation of repetitive tasks such as data validation and reporting.</Text>
           <Text style={styles.bullet}>• ITK Utilities Validating data Integrity and Correction.</Text>
@@ -113,8 +115,8 @@ const Resume = () => (
           <Text style={styles.bullet}>• Automated Report Generation for consolidating migration data.</Text>
 {/* Add a gap between job entries */}
     <Text style={{ marginBottom: 10 }} /> {/* Empty Text for spacing */}
-          <Text style={styles.jobTitle}>Lilium GmbH</Text>
-          <Text style={styles.company}>Developer</Text>
+          <Text style={styles.company}>Lilium GmbH</Text>
+          <Text style={styles.jobTitle}>Developer</Text>
           <Text style={styles.date}>December 2021 - August 2022</Text>
           <Text style={styles.bullet}>• Custom Translator in Dispatcher to attach a Generated Excel to Change Objects which includes utility for processing excel.</Text>
           <Text style={styles.bullet}>• Custom Handler to update the Signature and Completion date of a Review Task for User KPI on ECN Object.</Text>
@@ -141,8 +143,8 @@ const Resume = () => (
           <Text style={styles.bullet}>• Resolving Critical Support Tickets related to Workflows, Dispatchers, Change Management, Document Management, Export Control.</Text>
 {/* Add a gap between job entries */}
     <Text style={{ marginBottom: 10 }} /> {/* Empty Text for spacing */}
-          <Text style={styles.jobTitle}>SBG-SMIT</Text>
-          <Text style={styles.company}>Developer</Text>
+          <Text style={styles.company}>SBG-SMIT</Text>
+          <Text style={styles.jobTitle}>Developer</Text>
           <Text style={styles.date}>August 2021 - December 2021</Text>
           <Text style={styles.bullet}>• Implemented a Teamcenter Utility that exports any Business Object Properties that are configured in a Batch Script.</Text>
           <Text style={styles.bullet}>• Rule handler to validate Negative Mass Values for Designs which are attached with Different Relations based on the Workflow.</Text>
@@ -161,9 +163,9 @@ const Resume = () => (
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Technical Skills</Text>
         <View style={styles.content}>
-          <Text style={styles.bullet}>• Languages: Java, HTML, C, C++, Powershell, Batch Scripting</Text>
-          <Text style={styles.bullet}>• PLM: Teamcenter 12.4.X, AWC 5.X</Text>
-          <Text style={styles.bullet}>• Database: MS SQL Server, Oracle</Text>
+          <Text style={styles.jobTitle}>• Languages: Java, HTML, C, C++, Powershell, Batch Scripting</Text>
+          <Text style={styles.jobTitle}>• PLM: Teamcenter 12.4.X, AWC 5.X</Text>
+          <Text style={styles.jobTitle}>• Database: MS SQL Server, Oracle</Text>
         </View>
       </View>
 
@@ -171,14 +173,14 @@ const Resume = () => (
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Education</Text>
         <View style={styles.content}>
-          <Text style={styles.bullet}>Master of Computer Applications (MCA)</Text>
-          <Text style={styles.bullet}>JNTU Kakinada | 2021 | CGPA: 7.37</Text>
-          <Text style={styles.bullet}>Bachelor of Computer Science (BSc)</Text>
-          <Text style={styles.bullet}>Adikavi Nanaya University | 2019 | CGPA: 3.35</Text>
-          <Text style={styles.bullet}>Intermediate</Text>
-          <Text style={styles.bullet}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%</Text>
-          <Text style={styles.bullet}>Secondary School Certificate (SSC)</Text>
-          <Text style={styles.bullet}>Little Buds Public School | 2013 | CGPA: 9.0</Text>
+          <Text style={styles.company}>Master of Computer Applications (MCA)</Text>
+          <Text style={styles.jobTitle}>JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
+          <Text style={styles.company}>Bachelor of Computer Science (BSc)</Text>
+          <Text style={styles.jobTitle}>Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
+          <Text style={styles.company}>Intermediate</Text>
+          <Text style={styles.jobTitle}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%/100</Text>
+          <Text style={styles.company}>Secondary School Certificate (SSC)</Text>
+          <Text style={styles.jobTitle}>Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
         </View>
       </View>
     </Page>
