@@ -1,3 +1,8 @@
+@@ -1,65 +1,23 @@
+import React from 'react';
+import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+
+
 // Create styles
 const styles = StyleSheet.create({
   // ... other styles remain unchanged
@@ -7,18 +12,70 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     color: '#007BFF', // Changed color to a blue shade for emphasis
   },
+  header: {
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  name: {
+    fontSize: 26,
+    marginBottom: 5,
+    fontWeight: 'bold',
+  },
+  title: {
+    fontSize: 18,
+    color: '#666666',
+    marginBottom: 10,
+  },
+  contact: {
+  // ... other styles remain unchanged
+  company: {
+    fontSize: 12,
+    color: '#333333',
+    fontStyle: 'italic',
+    marginBottom: 5,
+    color: '#007BFF', // Changed color to a blue shade for emphasis
+  },
+  section: {
+    marginBottom: 20,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    marginBottom: 8,
+    backgroundColor: '#f5f5f5',
+    padding: 5,
   jobTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  content: {
+    fontSize: 12,
+    lineHeight: 1.5,
+    marginBottom: 2, // Reduced margin for better spacing
+    color: '#333333', // Darker color for better visibility
+  },
+   bullet: {
+    marginBottom: 8, // Increased margin for better spacing
+    marginLeft: 10,
+    textIndent: -10,
+  },
+   jobTitle: {
     fontSize: 14,
     fontWeight: 'bold',
     marginBottom: 2, // Reduced margin for better spacing
     color: '#333333', // Darker color for better visibility
   },
-  bullet: {
-    marginBottom: 8, // Increased margin for better spacing
-    marginLeft: 10,
-    textIndent: -10,
+  company: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    marginBottom: 5,
+  },
+  date: {
+    fontSize: 12,
+    color: '#666666',
+    marginBottom: 10,
   },
 });
+
 
 // Create Document Component
 const Resume = () => (
