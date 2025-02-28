@@ -9,53 +9,56 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 20,
+    textAlign: 'center',
   },
   name: {
-    fontSize: 24,
+    fontSize: 26,
     marginBottom: 5,
+    fontWeight: 'bold',
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#666666',
     marginBottom: 10,
   },
   contact: {
-    fontSize: 10,
+    fontSize: 12,
     color: '#333333',
     marginBottom: 5,
   },
   section: {
-    marginBottom: 15,
+    marginBottom: 20,
   },
   sectionTitle: {
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 8,
     backgroundColor: '#f5f5f5',
     padding: 5,
+    fontWeight: 'bold',
   },
   content: {
-    fontSize: 10,
+    fontSize: 12,
     lineHeight: 1.5,
   },
   bullet: {
     marginBottom: 5,
+    marginLeft: 10,
+    textIndent: -10,
   },
-  table: {
-    display: 'flex',
-    width: 'auto',
-    marginBottom: 10,
-  },
-  tableRow: {
-    flexDirection: 'row',
+  jobTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
     marginBottom: 5,
   },
-  tableCell: {
-    flex: 1,
-    fontSize: 10,
+  company: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    marginBottom: 5,
   },
-  tableCellHeader: {
-    flex: 1,
-    fontSize: 10,
+  date: {
+    fontSize: 12,
+    color: '#666666',
+    marginBottom: 10,
   },
 });
 
@@ -69,7 +72,6 @@ const Resume = () => (
         <Text style={styles.title}>PLM Implementation Consultant</Text>
         <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
       </View>
-
 
       {/* Professional Summary */}
       <View style={styles.section}>
@@ -88,10 +90,11 @@ const Resume = () => (
       {/* Professional Experience */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Professional Experience</Text>
+        
         <View style={styles.content}>
-                         
-          <Text style={styles.title}>Siemens Mobility | PLM Data Migration Consultant | August 2022 - Present</Text>
-                     
+          <Text style={styles.jobTitle}>Siemens Mobility</Text>
+          <Text style={styles.company}>PLM Data Migration Consultant</Text>
+          <Text style={styles.date}>August 2022 - Present</Text>
           <Text style={styles.bullet}>• Developed scripts in Python for automation of repetitive tasks such as data validation and reporting.</Text>
           <Text style={styles.bullet}>• ITK Utilities Validating data Integrity and Correction.</Text>
           <Text style={styles.bullet}>• Collaborated with business stakeholders and end-users to define data mapping rules and validate migrated data.</Text>
@@ -106,9 +109,10 @@ const Resume = () => (
           <Text style={styles.bullet}>• Extracted Assembly Information from source in a bottom to top approach.</Text>
           <Text style={styles.bullet}>• Utilized TCIN utility for Importing NX Assemblies to streamline product data integration and facilitate seamless collaboration between engineering and manufacturing teams.</Text>
           <Text style={styles.bullet}>• Automated Report Generation for consolidating migration data.</Text>
-          
-<View style={{ marginBottom: 10 }} />  
-          <Text style={styles.title}>Lilium GmbH | Developer | December 2021 - August 2022</Text>
+
+          <Text style={styles.jobTitle}>Lilium GmbH</Text>
+          <Text style={styles.company}>Developer</Text>
+          <Text style={styles.date}>December 2021 - August 2022</Text>
           <Text style={styles.bullet}>• Custom Translator in Dispatcher to attach a Generated Excel to Change Objects which includes utility for processing excel.</Text>
           <Text style={styles.bullet}>• Custom Handler to update the Signature and Completion date of a Review Task for User KPI on ECN Object.</Text>
           <Text style={styles.bullet}>• Custom Handler to capture the signoff’s information in a table property on Change Objects.</Text>
@@ -132,8 +136,10 @@ const Resume = () => (
           <Text style={styles.bullet}>• Automated Extraction of volume files during the import.</Text>
           <Text style={styles.bullet}>• Developed ITK Utility to Update attributes, status on the Item revisions and datasets for the post-migration activity.</Text>
           <Text style={styles.bullet}>• Resolving Critical Support Tickets related to Workflows, Dispatchers, Change Management, Document Management, Export Control.</Text>
-<View style={{ marginBottom: 10 }} />  
-          <Text style={styles.title}>SBG-SMIT | Developer | August 2021 - December 2021</Text>
+
+          <Text style={styles.jobTitle}>SBG-SMIT</Text>
+          <Text style={styles.company}>Developer</Text>
+          <Text style={styles.date}>August 2021 - December 2021</Text>
           <Text style={styles.bullet}>• Implemented a Teamcenter Utility that exports any Business Object Properties that are configured in a Batch Script.</Text>
           <Text style={styles.bullet}>• Rule handler to validate Negative Mass Values for Designs which are attached with Different Relations based on the Workflow.</Text>
           <Text style={styles.bullet}>• Stylesheets configuration includes tables, labels, and visible when usage.</Text>
@@ -158,22 +164,19 @@ const Resume = () => (
       </View>
 
       {/* Education */}
-<View style={styles.section}>
-  <Text style={styles.sectionTitle}>Education</Text>
-  <View style={styles.content}>
-    <Text style={styles.bullet}>Master of Computer Applications (MCA)</Text>
-    <Text style={styles.bullet}>JNTU Kakinada | 2021 | CGPA: 7.37</Text>             
-
-    <Text style={styles.bullet}>Bachelor of Computer Science (BSc)</Text>
-    <Text style={styles.bullet}>Adikavi Nanaya University | 2019 | CGPA: 3.35</Text>  
-
-    <Text style={styles.bullet}>Intermediate</Text>
-    <Text style={styles.bullet}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%</Text>  
-
-    <Text style={styles.bullet}>Secondary School Certificate (SSC)</Text>
-    <Text style={styles.bullet}>Little Buds Public School | 2013 | CGPA: 9.0</Text>  
-  </View> 
-</View>
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Education</Text>
+        <View style={styles.content}>
+          <Text style={styles.bullet}>Master of Computer Applications (MCA)</Text>
+          <Text style={styles.bullet}>JNTU Kakinada | 2021 | CGPA: 7.37</Text>
+          <Text style={styles.bullet}>Bachelor of Computer Science (BSc)</Text>
+          <Text style={styles.bullet}>Adikavi Nanaya University | 2019 | CGPA: 3.35</Text>
+          <Text style={styles.bullet}>Intermediate</Text>
+          <Text style={styles.bullet}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%</Text>
+          <Text style={styles.bullet}>Secondary School Certificate (SSC)</Text>
+          <Text style={styles.bullet}>Little Buds Public School | 2013 | CGPA: 9.0</Text>
+        </View>
+      </View>
     </Page>
   </Document>
 );
