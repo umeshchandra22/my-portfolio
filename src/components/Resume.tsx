@@ -100,9 +100,9 @@ const Resume = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       {/* Header */}
-    <View style={styles.header}>
+      <View style={styles.header}>
         {/* Profile Picture */}
-        <Image src="/ProfilePic.png" style={styles.profilePic} />
+        <Image src="ProfilePic.png" style={styles.profilePic} />
 
         {/* Header Text */}
         <View style={styles.headerText}>
@@ -110,7 +110,7 @@ const Resume = () => (
           <Text style={styles.headertitle}>PLM Implementation Consultant</Text>
           <Text style={styles.headercontact}>Email: ksaiumeshchandra@gmail.com</Text>
         </View>
- </View>
+      </View>
 
       {/* Professional Summary */}
       <View style={styles.section}>
