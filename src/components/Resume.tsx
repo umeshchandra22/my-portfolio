@@ -14,12 +14,6 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
   },
-profilePic: {
-    width: 60,  // Adjust size as needed
-    height: 60,
-    borderRadius: 30, // Makes the image circular
-    marginRight: 10, // Space between image and text
-  },
   headerText: {
     flex: 1, // Allow text to take remaining space
     textAlign: 'left',
@@ -101,9 +95,6 @@ const Resume = () => (
     <Page size="A4" style={styles.page}>
       {/* Header */}
       <View style={styles.header}>
-        {/* Profile Picture */}
-        <Image src="ProfilePic.png" style={styles.profilePic} />
-
         {/* Header Text */}
         <View style={styles.headerText}>
           <Text style={styles.headername}>Sai Umesh Chandra Katta</Text>
