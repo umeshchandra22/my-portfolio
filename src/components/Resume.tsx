@@ -7,10 +7,13 @@ const styles = StyleSheet.create({
     padding: 30,
     fontFamily: 'Helvetica',
   },
-  header: {
-    marginBottom: 20,
-    textAlign: 'center',
-  },
+header: {
+  marginBottom: '20px',
+  textAlign: 'left',
+  fontSize: '24px', // Added font size
+  fontWeight: 'bold', // Added font weight for emphasis
+  color: '#333', // Changed text color for better visibility
+},
   name: {
     fontSize: 26,
     marginBottom: 5,
