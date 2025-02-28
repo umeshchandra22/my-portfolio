@@ -36,7 +36,7 @@ profilePic: {
   headercontact: {
     fontSize: 12,
     color: 'white',
-  }
+  },
   name: {
     fontSize: 26,
     marginBottom: 5,
