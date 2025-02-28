@@ -8,6 +8,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Helvetica',
   },
   header: {
+    backgroundColor: '#007BFF', // Blue color
+    padding: 10,
     marginBottom: 20,
     textAlign: 'center',
   },
@@ -62,7 +64,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
     marginBottom: 2, // Reduced margin for better spacing
-    color: '#333333', // Darker color for better visibility
+    color: '#f5f5f5', // Darker color for better visibility
   },
 });
 
@@ -163,9 +165,9 @@ const Resume = () => (
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Technical Skills</Text>
         
-          <Text style={styles.jobTitle}>• Languages: Java, HTML, C, C++, Powershell, Batch Scripting</Text>
-          <Text style={styles.jobTitle}>• PLM: Teamcenter 12.4.X, AWC 5.X</Text>
-          <Text style={styles.jobTitle}>• Database: MS SQL Server, Oracle</Text>
+          <Text style={styles.bullet}>• Languages: Java, HTML, C, C++, Powershell, Batch Scripting</Text>
+          <Text style={styles.bullet}>• PLM: Teamcenter 12.4.X, AWC 5.X</Text>
+          <Text style={styles.bullet}>• Database: MS SQL Server, Oracle</Text>
       
       </View>
 
@@ -174,13 +176,13 @@ const Resume = () => (
         <Text style={styles.sectionTitle}>Education</Text>
        
           <Text style={styles.company}>Master of Computer Applications (MCA)</Text>
-          <Text style={styles.jobTitle}>JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
+          <Text style={styles.bullet}>JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
           <Text style={styles.company}>Bachelor of Computer Science (BSc)</Text>
-          <Text style={styles.jobTitle}>Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
+          <Text style={styles.bullet}>Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
           <Text style={styles.company}>Intermediate</Text>
-          <Text style={styles.jobTitle}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%/100</Text>
+          <Text style={styles.bullet}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%/100</Text>
           <Text style={styles.company}>Secondary School Certificate (SSC)</Text>
-          <Text style={styles.jobTitle}>Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
+          <Text style={styles.bullet}>Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
       
       </View>
     </Page>
