@@ -247,46 +247,107 @@ function App() {
         )}
 
         {activeSection === 'experience' && (
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6">Experience</h2>
-            <div className="space-y-8">
-              <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex justify-between items-start mb-6">
-                  <div>
-                    <h3 className="text-2xl font-semibold">PLM Data Migration Consultant</h3>
-                    <p className="text-blue-600 text-lg">Siemens Mobility</p>
-                  </div>
-                  <p className="text-gray-500">August 2022 - Present</p>
-                </div>
-                <ul className="list-disc list-inside text-gray-600 space-y-3">
-                  <li>Developed scripts in Python for automation of repetitive tasks such as data validation and reporting</li>
-                  <li>ITK Utilities Validating data Integrity and Correction</li>
-                  <li>Implemented BOM migration and assisted in transitioning CAD data between legacy systems</li>
-                  <li>Wrote shell scripts and SQL queries for data extraction, cleaning and migration</li>
-                  <li>Monitored IPS upload utility and configured for errors and performed root cause analysis</li>
-                  <li>Usage of UG Clone for Extraction Utility within TeamCenter</li>
-                </ul>
-              </div>
+ <section className="mb-16">
+  <h2 className="text-3xl font-bold mb-6">Experience</h2>
+  <div className="space-y-8">
+    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-semibold">PLM Data Migration Consultant</h3>
+          <p className="text-blue-600 text-lg">Siemens Mobility</p>
+        </div>
+        <p className="text-gray-500">August 2022 - Present</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-600 space-y-3">
+        <li>Developed scripts in Python for automation of repetitive tasks such as data validation and reporting</li>
+        <li>ITK Utilities for validating data integrity and correction</li>
+        <li>Collaborated with business stakeholders to define data mapping rules and validate migrated data</li>
+        <li>Implemented BOM migration and assisted in transitioning CAD data between legacy systems and Teamcenter</li>
+        <li>Wrote shell scripts and SQL queries for data extraction, cleaning, and migration</li>
+        <li>Utilized SQL procedures for data extraction and transformation</li>
+        <li>Supported post-go-live activities including data validation, user support, and issue resolution</li>
+        <li>Assisted in configuring and deploying Teamcenter modules such as Change Management, Document Management, and BOM Management</li>
+        <li>Monitored IPS upload utility, configured error handling, and performed root cause analysis for mismatches</li>
+        <li>Used UG Clone for extraction utility within Teamcenter for NX Assemblies</li>
+        <li>Cleaned generated Clone files for importing into the target system</li>
+        <li>Extracted assembly information from source using a bottom-to-top approach</li>
+        <li>Utilized TCIN utility for importing NX assemblies to streamline product data integration</li>
+        <li>Automated report generation for consolidating migration data</li>
+      </ul>
+    </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex justify-between items-start mb-6">
-                  <div>
-                    <h3 className="text-2xl font-semibold">Developer</h3>
-                    <p className="text-blue-600 text-lg">Lilium GmbH</p>
-                  </div>
-                  <p className="text-gray-500">September 2020 - August 2022</p>
-                </div>
-                <ul className="list-disc list-inside text-gray-600 space-y-3">
-                  <li>Custom Translator in Dispatcher to attach Generated Excel to Change Objects</li>
-                  <li>Custom Handler to update Signature and Completion date of Review Tasks</li>
-                  <li>Implemented scripts to update existing Teamcenter attributes</li>
-                  <li>Change Management and Document Management Implementation</li>
-                  <li>Created Rule/Action Handlers and Custom Queries</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        )}
+    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-semibold">PLM Data Migration Consultant</h3>
+          <p className="text-blue-600 text-lg">Robert Bosch</p>
+        </div>
+        <p className="text-gray-500">September 2021 - August 2022</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-600 space-y-3">
+        <li>Managed and optimized SQL databases for data migration efforts</li>
+        <li>Developed custom SQL scripts to automate migration and cleanse source data</li>
+        <li>Migrated As Built Structures and Simulation Objects from source to target system</li>
+        <li>Developed ITK utilities for validating migrated data</li>
+        <li>Automated import processes using custom scripts</li>
+        <li>Utilized IPS utility for creating non-CAD data</li>
+        <li>Created Items and Item revisions with datasets using IPS Utility</li>
+        <li>Developed a utility to update Projects on all items</li>
+        <li>Automated extraction of volume files during import</li>
+        <li>Developed ITK utilities to update attributes and statuses post-migration</li>
+      </ul>
+    </div>
+
+    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-semibold">Developer</h3>
+          <p className="text-blue-600 text-lg">Lilium GmbH</p>
+        </div>
+        <p className="text-gray-500">September 2020 - August 2022</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-600 space-y-3">
+        <li>Developed a custom Translator in Dispatcher to attach generated Excel to Change Objects</li>
+        <li>Created a custom handler to update the signature and completion date of a review task for user KPI tracking</li>
+        <li>Developed a custom handler to capture signoff information in a table property on Change Objects</li>
+        <li>Implemented scripts to update existing Teamcenter attributes with new values from SQL database tables</li>
+        <li>Developed Object/Property extensions to meet business requirements</li>
+        <li>Built a Teamcenter Utility as a Cronjob to monitor Dispatcher Requests and complete Workflow tasks</li>
+        <li>Implemented Change Management and Document Management solutions</li>
+        <li>Developed PR, ECR, and ECN custom workflows using a mix of OOTB and custom handlers</li>
+        <li>Used Dynamic Participants for Change Management workflows</li>
+        <li>Created Rule/Action Handlers for business process automation</li>
+        <li>Configured Export Control using Projects</li>
+        <li>Created Custom Queries in Query Builder</li>
+        <li>Resolved critical support tickets related to workflows, dispatchers, change management, and document management</li>
+      </ul>
+    </div>
+
+    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-semibold">Developer</h3>
+          <p className="text-blue-600 text-lg">SBG-SMIT</p>
+        </div>
+        <p className="text-gray-500">August 2019 - September 2020</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-600 space-y-3">
+        <li>Implemented a Teamcenter utility to export business object properties configured in a batch script</li>
+        <li>Developed a rule handler to validate negative mass values for designs attached with different relations</li>
+        <li>Configured stylesheets including tables, labels, and visibility settings</li>
+        <li>Debugged pool and server issues, taking relevant corrective actions</li>
+        <li>Developed a custom handler to dynamically update table properties</li>
+        <li>Created custom extensions to meet business requirements</li>
+        <li>Developed a standalone utility using XML to automate object creation with property updates</li>
+        <li>Created a utility to analyze BOMs and update Excel with problem and impacted items</li>
+        <li>Designed and implemented custom workflows for various business objects</li>
+        <li>Managed BMIDE configurations including GRM Rules, Deep Copy Rules, Display Rules, and Custom Conditions</li>
+        <li>Created custom business objects, relationships, LOVs, and property extensions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+)}
 
         {activeSection === 'resume' && (
           <section className="mb-16">
