@@ -7,30 +7,13 @@ const styles = StyleSheet.create({
     padding: 30,
     fontFamily: 'Helvetica',
   },
- header: {
-    flexDirection: 'row', // Arrange items in a row
-    alignItems: 'center', // Align items vertically
-    backgroundColor: '#007BFF', // Blue background
-    padding: 10,
-    borderRadius: 5,
-  },
-  headerText: {
-    flex: 1, // Allow text to take remaining space
-    textAlign: 'left',
-  },
-  headername: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: 'white',
-  },
-  headertitle: {
-    fontSize: 14,
-    color: 'white',
-  },
-  headercontact: {
-    fontSize: 12,
-    color: 'white',
-  },
+header: {
+  marginBottom: '20px',
+  textAlign: 'cenr',
+  fontSize: '24px', // Added font size
+  fontWeight: 'bold', // Added font weight for emphasis
+  color: '#333', // Changed text color for better visibility
+},
   name: {
     fontSize: 26,
     marginBottom: 5,
@@ -65,9 +48,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     textIndent: -10,
   },
-entry: {
-  marginBottom: 8, // Adds spacing between education entries
-},
   jobTitle: {
     fontSize: 14,
     fontWeight: 'bold',
@@ -95,12 +75,9 @@ const Resume = () => (
     <Page size="A4" style={styles.page}>
       {/* Header */}
       <View style={styles.header}>
-        {/* Header Text */}
-        <View style={styles.headerText}>
-          <Text style={styles.headername}>Sai Umesh Chandra Katta</Text>
-          <Text style={styles.headertitle}>PLM Implementation Consultant</Text>
-          <Text style={styles.headercontact}>Email: ksaiumeshchandra@gmail.com</Text>
-        </View>
+        <Text style={styles.name}>Sai Umesh Chandra Katta</Text>
+        <Text style={styles.title}>PLM Implementation Consultant</Text>
+        <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
       </View>
 
       {/* Professional Summary */}
