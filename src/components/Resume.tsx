@@ -7,12 +7,36 @@ const styles = StyleSheet.create({
     padding: 30,
     fontFamily: 'Helvetica',
   },
-  header: {
-    backgroundColor: '#007BFF', // Blue color
+ header: {
+    flexDirection: 'row', // Arrange items in a row
+    alignItems: 'center', // Align items vertically
+    backgroundColor: '#007BFF', // Blue background
     padding: 10,
-    marginBottom: 20,
-    textAlign: 'center',
+    borderRadius: 5,
   },
+profilePic: {
+    width: 60,  // Adjust size as needed
+    height: 60,
+    borderRadius: 30, // Makes the image circular
+    marginRight: 10, // Space between image and text
+  },
+  headerText: {
+    flex: 1, // Allow text to take remaining space
+    textAlign: 'left',
+  },
+  headername: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  headertitle: {
+    fontSize: 14,
+    color: 'white',
+  },
+  headercontact: {
+    fontSize: 12,
+    color: 'white',
+  }
   name: {
     fontSize: 26,
     marginBottom: 5,
@@ -47,6 +71,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     textIndent: -10,
   },
+entry: {
+  marginBottom: 8, // Adds spacing between education entries
+},
   jobTitle: {
     fontSize: 14,
     fontWeight: 'bold',
@@ -64,7 +91,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
     marginBottom: 2, // Reduced margin for better spacing
-    color: '#f5f5f5', // Darker color for better visibility
+    color: '#333333', // Darker color for better visibility
   },
 });
 
@@ -73,11 +100,17 @@ const Resume = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       {/* Header */}
-      <View style={styles.header}>
-        <Text style={styles.name}>Sai Umesh Chandra Katta</Text>
-        <Text style={styles.title}>PLM Implementation Consultant</Text>
-        <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
-      </View>
+    <View style={styles.header}>
+        {/* Profile Picture */}
+        <Image src="/ProfilePic.png" style={styles.profilePic} />
+
+        {/* Header Text */}
+        <View style={styles.headerText}>
+          <Text style={styles.headername}>Sai Umesh Chandra Katta</Text>
+          <Text style={styles.headertitle}>PLM Implementation Consultant</Text>
+          <Text style={styles.headercontact}>Email: ksaiumeshchandra@gmail.com</Text>
+        </View>
+ </View>
 
       {/* Professional Summary */}
       <View style={styles.section}>
@@ -164,27 +197,38 @@ const Resume = () => (
       {/* Technical Skills */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Technical Skills</Text>
-        
+           <View style={styles.content}>
           <Text style={styles.bullet}>• Languages: Java, HTML, C, C++, Powershell, Batch Scripting</Text>
           <Text style={styles.bullet}>• PLM: Teamcenter 12.4.X, AWC 5.X</Text>
           <Text style={styles.bullet}>• Database: MS SQL Server, Oracle</Text>
-      
+       </View>
       </View>
 
-      {/* Education */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Education</Text>
-       
-          <Text style={styles.company}>Master of Computer Applications (MCA)</Text>
-          <Text style={styles.bullet}>JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
-          <Text style={styles.company}>Bachelor of Computer Science (BSc)</Text>
-          <Text style={styles.bullet}>Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
-          <Text style={styles.company}>Intermediate</Text>
-          <Text style={styles.bullet}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%/100</Text>
-          <Text style={styles.company}>Secondary School Certificate (SSC)</Text>
-          <Text style={styles.bullet}>Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
-      
-      </View>
+ {/* Education */}
+<View style={styles.section}>
+  <Text style={styles.sectionTitle}>Education</Text>
+
+  <View style={styles.entry}>
+    <Text style={styles.company}>Master of Computer Applications (MCA)</Text>
+    <Text style={styles.bullet}>JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
+  </View>
+
+  <View style={styles.entry}>
+    <Text style={styles.company}>Bachelor of Computer Science (BSc)</Text>
+    <Text style={styles.bullet}>Adikavi Nannaya University | 2019 | CGPA: 3.35/5</Text>
+  </View>
+
+  <View style={styles.entry}>
+    <Text style={styles.company}>Intermediate</Text>
+    <Text style={styles.bullet}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%</Text>
+  </View>
+
+  <View style={styles.entry}>
+    <Text style={styles.company}>Secondary School Certificate (SSC)</Text>
+    <Text style={styles.bullet}>Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
+  </View>
+</View>
+
     </Page>
   </Document>
 );
