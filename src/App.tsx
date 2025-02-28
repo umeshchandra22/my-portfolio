@@ -194,12 +194,12 @@ function App() {
                 {
                   icon: Briefcase,
                   title: 'Implementation',
-                  description: 'End-to-end PLM implementation including migration, testing, and deployment.'
+                  description: 'End-to-end PLM implementation including Migration, Change Management, Document Management'
                 },
                 {
                   icon: Award,
                   title: 'Expertise',
-                  description: 'Specialized in workflow automation, data migration, and system integration.'
+                  description: 'Specialized in automation, data migration, and system integration.'
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
