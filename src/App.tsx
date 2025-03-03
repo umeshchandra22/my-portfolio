@@ -256,45 +256,30 @@ function App() {
           <h3 className="text-2xl font-semibold">PLM Data Migration Consultant</h3>
           <p className="text-blue-600 text-lg">Siemens Mobility</p>
         </div>
-        <p className="text-gray-500">August 2022 - Present</p>
+        <p className="text-gray-500">September 2021 - Present</p>
       </div>
       <ul className="list-disc list-inside text-gray-600 space-y-3">
         <li>Developed scripts in Python for automation of repetitive tasks such as data validation and reporting</li>
-        <li>ITK Utilities for validating data integrity and correction</li>
+        <li>Developed ITK utilities for validating data integrity, correcting issues, and updating attributes and statuses post-migration</li>
         <li>Collaborated with business stakeholders to define data mapping rules and validate migrated data</li>
         <li>Implemented BOM migration and assisted in transitioning CAD data between legacy systems and Teamcenter</li>
         <li>Wrote shell scripts and SQL queries for data extraction, cleaning, and migration</li>
         <li>Utilized SQL procedures for data extraction and transformation</li>
+        <li>Managed and optimized SQL databases for data migration efforts</li>
         <li>Supported post-go-live activities including data validation, user support, and issue resolution</li>
         <li>Assisted in configuring and deploying Teamcenter modules such as Change Management, Document Management, and BOM Management</li>
         <li>Monitored IPS upload utility, configured error handling, and performed root cause analysis for mismatches</li>
-        <li>Used UG Clone for extraction utility within Teamcenter for NX Assemblies</li>
+        <li>Utilized UG Clone for extracting NX assemblies within Teamcenter</li>
         <li>Cleaned generated Clone files for importing into the target system</li>
         <li>Extracted assembly information from source using a bottom-to-top approach</li>
         <li>Utilized TCIN utility for importing NX assemblies to streamline product data integration</li>
         <li>Automated report generation for consolidating migration data</li>
-      </ul>
-    </div>
-
-    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex justify-between items-start mb-6">
-        <div>
-          <h3 className="text-2xl font-semibold">PLM Data Migration Consultant</h3>
-          <p className="text-blue-600 text-lg">Robert Bosch</p>
-        </div>
-        <p className="text-gray-500">September 2021 - August 2022</p>
-      </div>
-      <ul className="list-disc list-inside text-gray-600 space-y-3">
-        <li>Managed and optimized SQL databases for data migration efforts</li>
         <li>Developed custom SQL scripts to automate migration and cleanse source data</li>
         <li>Migrated As Built Structures and Simulation Objects from source to target system</li>
-        <li>Developed ITK utilities for validating migrated data</li>
         <li>Automated import processes using custom scripts</li>
-        <li>Utilized IPS utility for creating non-CAD data</li>
-        <li>Created Items and Item revisions with datasets using IPS Utility</li>
+        <li>Utilized IPS utility for creating non-CAD data, including Items and Item revisions with datasets</li>
         <li>Developed a utility to update Projects on all items</li>
         <li>Automated extraction of volume files during import</li>
-        <li>Developed ITK utilities to update attributes and statuses post-migration</li>
       </ul>
     </div>
 
