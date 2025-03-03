@@ -10,38 +10,42 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 20,
+    justifyContent: 'center',
   },
   profilePic: {
-    width: 70,
-    height: 70,
-    borderRadius: 35,
-    marginRight: 10,
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    marginRight: 20,
   },
   name: {
-    fontSize: 22,
+    fontSize: 28,
     fontWeight: 'bold',
+    textAlign: 'center',
   },
   title: {
     fontSize: 16,
     color: '#666666',
-    marginBottom: 5,
+    marginBottom: 10,
+    textAlign: 'center',
   },
   contact: {
-    fontSize: 10,
+    fontSize: 12,
     color: '#333333',
-    marginBottom: 5,
+    marginBottom: 10,
+    textAlign: 'center',
   },
   leftColumn: {
-    width: '50%',
+    width: '40%',
     paddingRight: 10,
   },
   rightColumn: {
-    width: '50%',
+    width: '60%',
     paddingLeft: 10,
   },
   section: {
-    marginBottom: 10,
+    marginBottom: 15,
   },
   sectionTitle: {
     fontSize: 14,
@@ -78,6 +82,12 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     color: '#333333',
   },
+  declaration: {
+    marginTop: 20,
+    textAlign: 'center',
+    fontSize: 10,
+    fontStyle: 'italic',
+  },
 });
 
 // Create Document Component
@@ -101,34 +111,25 @@ const Resume = () => (
           {/* Technical Skills */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Technical Skills</Text>
-            <View style={styles.content}>
-              <Text style={styles.jobTitle}>• Programming Languages:</Text>
-              <Text style={styles.bullet}>Java</Text>
-              <Text style={styles.bullet}>HTML</Text>
-              <Text style={styles.bullet}>C</Text>
-              <Text style={styles.bullet}>C++</Text>
-              <Text style={styles.bullet}>Powershell</Text>
-              <Text style={styles.bullet}>Batch Scripting</Text>
+            <Text style={styles.bullet}>• Java, HTML, C, C++, Powershell, Batch Scripting</Text>
+            <Text style={styles.bullet}>• Teamcenter 12.4.X, AWC 5.X</Text>
+            <Text style={styles.bullet}>• MS SQL Server, Oracle</Text>
+          </View>
 
-              <Text style={styles.jobTitle}>• PLM Tools:</Text>
-              <Text style={styles.bullet}>Teamcenter 12.4.X</Text>
-              <Text style={styles.bullet}>AWC 5.X</Text>
-
-              <Text style={styles.jobTitle}>• Database Management:</Text>
-              <Text style={styles.bullet}>MS SQL Server</Text>
-              <Text style={styles.bullet}>Oracle</Text>
-            </View>
+          {/* Achievements */}
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Achievements</Text>
+            <Text style={styles.bullet}>• Employee of the Year Award for 2021, 2022, and 2023.</Text>
+            <Text style={styles.bullet}>• Went to Germany in 2024 as Migration Consultant for Siemens Project.</Text>
           </View>
 
           {/* Education */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Education</Text>
-            <View style={styles.content}>
-              <Text style={styles.company}>MCA, JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
-              <Text style={styles.company}>BSc, Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
-              <Text style={styles.company}>Intermediate, Sri Sidhartha Jr College | 2015 | 75.9%</Text>
-              <Text style={styles.company}>SSC, Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
-            </View>
+            <Text style={styles.bullet}>MCA, JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
+            <Text style={styles.bullet}>BSc, Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
+            <Text style={styles.bullet}>Intermediate, Sri Sidhartha Jr College | 2015 | 75.9%</Text>
+            <Text style={styles.bullet}>SSC, Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
           </View>
         </View>
 
@@ -137,12 +138,10 @@ const Resume = () => (
           {/* Professional Summary */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Summary</Text>
-            <View style={styles.content}>
-              <Text style={styles.bullet}>• Strong hands-on experience in Development and Migration of Siemens Teamcenter.</Text>
-              <Text style={styles.bullet}>• Skilled in root cause analysis, requirements gathering, and testing.</Text>
-              <Text style={styles.bullet}>• Developed migration plans and timelines to ensure seamless transitions.</Text>
-              <Text style={styles.bullet}>• Collaborated with stakeholders to resolve issues during migration.</Text>
-            </View>
+            <Text style={styles.bullet}>• Strong hands-on experience in Development and Migration of Siemens Teamcenter.</Text>
+            <Text style={styles.bullet}>• Skilled in root cause analysis, requirements gathering, and testing.</Text>
+            <Text style={styles.bullet}>• Developed migration plans and timelines to ensure seamless transitions.</Text>
+            <Text style={styles.bullet}>• Collaborated with stakeholders to resolve issues during migration.</Text>
           </View>
 
           {/* Professional Experience */}
@@ -176,6 +175,9 @@ const Resume = () => (
           </View>
         </View>
       </View>
+
+      {/* Declaration */}
+      <Text style={styles.declaration}>I hereby declare that the above information is true and correct to the best of my knowledge.</Text>
     </Page>
   </Document>
 );
