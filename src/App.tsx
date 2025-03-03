@@ -256,7 +256,7 @@ function App() {
           <h3 className="text-2xl font-semibold">PLM Data Migration Consultant</h3>
           <p className="text-blue-600 text-lg">Siemens Mobility</p>
         </div>
-        <p className="text-gray-500">September 2021 - Present</p>
+        <p className="text-gray-500">September 2023 - Present</p>
       </div>
       <ul className="list-disc list-inside text-gray-600 space-y-3">
         <li>Developed scripts in Python for automation of repetitive tasks such as data validation and reporting</li>
@@ -289,7 +289,7 @@ function App() {
           <h3 className="text-2xl font-semibold">Developer</h3>
           <p className="text-blue-600 text-lg">Lilium GmbH</p>
         </div>
-        <p className="text-gray-500">September 2020 - August 2022</p>
+        <p className="text-gray-500">September 2021 - August 2023</p>
       </div>
       <ul className="list-disc list-inside text-gray-600 space-y-3">
         <li>Developed a custom Translator in Dispatcher to attach generated Excel to Change Objects</li>
@@ -314,7 +314,7 @@ function App() {
           <h3 className="text-2xl font-semibold">Developer</h3>
           <p className="text-blue-600 text-lg">SBG-SMIT</p>
         </div>
-        <p className="text-gray-500">August 2019 - September 2020</p>
+        <p className="text-gray-500">August 2021 - September 2021</p>
       </div>
       <ul className="list-disc list-inside text-gray-600 space-y-3">
         <li>Implemented a Teamcenter utility to export business object properties configured in a batch script</li>
