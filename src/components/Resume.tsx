@@ -4,28 +4,31 @@ import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/render
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    padding: 30,
+    padding: 20,
     fontFamily: 'Helvetica',
   },
   header: {
-    marginBottom: 20,
-    textAlign: 'center',
-    fontSize: 20, // Decreased font size
-    fontWeight: 'bold',
-    color: '#333',
+    flexDirection: 'row', // Align items in a row
+    alignItems: 'center', // Center items vertically
+    marginBottom: 10,
+  },
+  profilePic: {
+    width: 70, // Adjusted size
+    height: 70, // Adjusted size
+    borderRadius: 35, // Circular image
+    marginRight: 10, // Space between image and text
   },
   name: {
-    fontSize: 22, // Decreased font size
-    marginBottom: 5,
+    fontSize: 22,
     fontWeight: 'bold',
   },
   title: {
-    fontSize: 16, // Decreased font size
+    fontSize: 16,
     color: '#666666',
     marginBottom: 5,
   },
   contact: {
-    fontSize: 10, // Decreased font size
+    fontSize: 10,
     color: '#333333',
     marginBottom: 5,
   },
@@ -75,12 +78,6 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     color: '#333333',
   },
-  profilePic: {
-    width: 80, // Decreased size
-    height: 80, // Decreased size
-    borderRadius: 40, // Circular image
-    marginBottom: 10,
-  },
 });
 
 // Create Document Component
@@ -90,9 +87,11 @@ const Resume = () => (
       {/* Header */}
       <View style={styles.header}>
         <Image src="public/ProfilePic.png" style={styles.profilePic} />
-        <Text style={styles.name}>Sai Umesh Chandra Katta</Text>
-        <Text style={styles.title}>PLM Implementation Consultant</Text>
-        <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
+        <View>
+          <Text style={styles.name}>Sai Umesh Chandra Katta</Text>
+          <Text style={styles.title}>PLM Implementation Consultant</Text>
+          <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
+        </View>
       </View>
 
       {/* Content Section */}
@@ -113,14 +112,10 @@ const Resume = () => (
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Education</Text>
             <View style={styles.content}>
-              <Text style={styles.company}>Master of Computer Applications (MCA)</Text>
-              <Text style={styles.jobTitle}>JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
-              <Text style={styles.company}>Bachelor of Computer Science (BSc)</Text>
-              <Text style={styles.jobTitle}>Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
-              <Text style={styles.company}>Intermediate</Text>
-              <Text style={styles.jobTitle}>Sri Sidhartha Jr College | 2015 | Percentage: 75.9%</Text>
-              <Text style={styles.company}>Secondary School Certificate (SSC)</Text>
-              <Text style={styles.jobTitle}>Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
+              <Text style={styles.company}>MCA, JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
+              <Text style={styles.company}>BSc, Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
+              <Text style={styles.company}>Intermediate, Sri Sidhartha Jr College | 2015 | 75.9%</Text>
+              <Text style={styles.company}>SSC, Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
             </View>
           </View>
         </View>
@@ -144,7 +139,7 @@ const Resume = () => (
             <View style={styles.content}>
               <Text style={styles.company}>Siemens Mobility</Text>
               <Text style={styles.jobTitle}>PLM Data Migration Consultant</Text>
-              <Text style={styles.date}>August 2022 - Present (1 year)</Text>
+              <Text style={styles.date}>August 2023 - Present</Text>
               <Text style={styles.bullet}>• Developed scripts in Python for automation of data validation.</Text>
               <Text style={styles.bullet}>• Collaborated with stakeholders to define data mapping rules.</Text>
               <Text style={styles.bullet}>• Assisted in transitioning CAD data between legacy systems and Teamcenter.</Text>
@@ -153,7 +148,7 @@ const Resume = () => (
 
               <Text style={styles.company}>Lilium GmbH</Text>
               <Text style={styles.jobTitle}>Developer</Text>
-              <Text style={styles.date}>December 2021 - August 2022 (8 months)</Text>
+              <Text style={styles.date}>December 2021 - August 2023 </Text>
               <Text style={styles.bullet}>• Developed custom handlers for Teamcenter workflows.</Text>
               <Text style={styles.bullet}>• Implemented scripts to update Teamcenter attributes.</Text>
               <Text style={styles.bullet}>• Managed SQL databases to support data migration efforts.</Text>
@@ -161,7 +156,7 @@ const Resume = () => (
 
               <Text style={styles.company}>SBG-SMIT</Text>
               <Text style={styles.jobTitle}>Developer</Text>
-              <Text style={styles.date}>August 2021 - December 2021 (5 months)</Text>
+              <Text style={styles.date}>August 2021 - December 2021</Text>
               <Text style={styles.bullet}>• Implemented a Teamcenter Utility that exports any Business Object Properties.</Text>
               <Text style={styles.bullet}>• Rule handler to validate Negative Mass Values for Designs.</Text>
               <Text style={styles.bullet}>• Created custom Handler to update table property dynamically.</Text>
