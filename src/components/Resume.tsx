@@ -193,7 +193,8 @@ const Resume = () => (
       <Text style={styles.date}>August 2021 - December 2021</Text>
       <Text style={styles.bullet}>• Developed a Teamcenter Utility to export configurable Business Object Properties via Batch Scripts.</Text>
       <Text style={styles.bullet}>• Created custom Workflows and Handlers, managing BMIDE configurations such as GRM Rules, Deep Copy Rules, Display Rules, and Overlay Icons.</Text>
-    </View>
+     </View>
+   </View>
   </View>
 </View>
 
