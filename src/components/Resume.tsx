@@ -164,8 +164,6 @@ const Resume = () => (
             <Text style={styles.sectionTitle}>Professional Summary</Text>
 		  <View style={styles.content}>
           <Text style={styles.bullet}>• Strong hands-on experience in Development and Configuration and Migration of Siemens Teamcenter using IPS Upload and NX Utilities.</Text>
-          <Text style={styles.bullet}>• Skilled in performing root cause analysis, gathering requirements, conducting impact analysis, executing testing, and coordinating production releases.</Text>
-          <Text style={styles.bullet}>• Crafted detailed migration plans, timelines, and risk assessments to ensure seamless data transitions while minimizing system downtime and disruption.</Text>
           <Text style={styles.bullet}>• Worked closely with IT, business stakeholders, and third-party vendors to gather requirements, resolve issues, and ensure alignment during migration.</Text>
           <Text style={styles.bullet}>• Hands-on experience in implementing various Teamcenter utilities: process dispatcher requests and automate the workflow task completion, export business object properties, reading of XML’s and to create the objects update properties.</Text>
           <Text style={styles.bullet}>• Implemented/enabled custom Dispatcher translator, WF Action/Rule handlers, extensions for Teamcenter.</Text>
@@ -180,34 +178,25 @@ const Resume = () => (
               <Text style={styles.jobTitle}>PLM Data Migration Consultant</Text>
               <Text style={styles.date}>August 2023 - Present</Text>
           <Text style={styles.bullet}>• Developed scripts in Python for automation of repetitive tasks such as data validation and reporting.</Text>
-          <Text style={styles.bullet}>• Collaborated with business stakeholders and end-users to define data mapping rules and validate migrated data.</Text>
           <Text style={styles.bullet}>• Implemented BOM migration and assisted in transitioning CAD data between legacy systems and Teamcenter data.</Text>
           <Text style={styles.bullet}>• Utilized SQL Procedures for data extraction from the legacy system performing transformation.</Text>
           <Text style={styles.bullet}>• Supported post-go-live activities, including data validation, user support, and issue resolution.</Text>
           <Text style={styles.bullet}>• Usage of UG Clone for Extraction Utility within Teamcenter enhancing data management related to NX Assemblies.</Text>
-          <Text style={styles.bullet}>• Automated Report Generation for consolidating migration data.</Text>
-		  <Text style={styles.bullet}>• Using IPS Utility to create non-CAD data.</Text>
-          <Text style={styles.bullet}>• Utilization of IPS Utility to create Items and Item revisions with datasets from the extracted data.</Text>
-          <Text style={styles.bullet}>• Automated Extraction of volume files during the import.</Text>
 
           <Text style={styles.company}>Lilium GmbH</Text>
           <Text style={styles.jobTitle}>Developer</Text>
           <Text style={styles.date}>December 2021 - August 2023</Text>
           <Text style={styles.bullet}>• Custom Translator in Dispatcher to attach a Generated Excel to Change Objects which includes utility for processing excel.</Text>
-          <Text style={styles.bullet}>• Custom Handler to update the Signature and Completion date of a Review Task for User KPI on ECN Object.</Text>
           <Text style={styles.bullet}>• Implemented a script to update existing Teamcenter attributes to new attributes sourced from Teamcenter SQL database table.</Text>
           <Text style={styles.bullet}>• Developed a Teamcenter Utility that operates as a Cronjob, monitoring the state of the Dispatcher Requests and completing Workflow tasks.</Text>
           <Text style={styles.bullet}>• Implementation Of Change Management and Document Management Implementation.</Text>
-          <Text style={styles.bullet}>• ITK Utilities Development for Validating and Importing Migration Data.</Text>
           <Text style={styles.bullet}>• Resolving Critical Support Tickets related to Workflows, Dispatchers, Change Management, Document Management, Export Control.</Text>
 
           <Text style={styles.company}>SBG-SMIT</Text>
           <Text style={styles.jobTitle}>Developer</Text>
           <Text style={styles.date}>August 2021 - December 2021</Text>
           <Text style={styles.bullet}>• Implemented a Teamcenter Utility that exports any Business Object Properties that are configured in a Batch Script.</Text>
-          <Text style={styles.bullet}>• Rule handler to validate Negative Mass Values for Designs which are attached with Different Relations based on the Workflow.</Text>
-          <Text style={styles.bullet}>• Created custom Handler to update table property which is used to fill custom object values dynamically.</Text>
-          <Text style={styles.bullet}>• Created new Custom Workflows for different Business Objects as per Business Requirement.</Text>
+          <Text style={styles.bullet}>• Created new Custom Workflows with custom Handlers for different Business Objects as per Business Requirement.</Text>
           <Text style={styles.bullet}>• Managing BMIDE configurations, including GRM Rules, Deep Copy Rules, Display Rules, Custom Conditions, Propagation Rules, Overlay Icon, and other configurations. Created custom Business objects, Relations, LOV’s (classic, batch, dynamic), properties on Business objects.</Text>
             </View>
           </View>
