@@ -132,9 +132,11 @@ const Resume = () => (
           {/* Achievements */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Achievements</Text>
+		     <View style={styles.content}>
             <Text style={styles.bullet}>• Employee of the Year (2021-2023) for excellence in PLM implementation.</Text>
             <Text style={styles.bullet}>• Migration Consultant for Siemens project in Germany (2024).</Text>
           </View>
+		   </View>
 
           {/* Education */}
           <View style={styles.section}>
@@ -160,6 +162,7 @@ const Resume = () => (
           {/* Professional Summary */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Summary</Text>
+		  <View style={styles.content}>
           <Text style={styles.bullet}>• Strong hands-on experience in Development and Configuration and Migration of Siemens Teamcenter using IPS Upload and NX Utilities.</Text>
           <Text style={styles.bullet}>• Skilled in performing root cause analysis, gathering requirements, conducting impact analysis, executing testing, and coordinating production releases.</Text>
           <Text style={styles.bullet}>• Crafted detailed migration plans, timelines, and risk assessments to ensure seamless data transitions while minimizing system downtime and disruption.</Text>
@@ -168,7 +171,7 @@ const Resume = () => (
           <Text style={styles.bullet}>• Implemented/enabled custom Dispatcher translator, WF Action/Rule handlers, extensions for Teamcenter.</Text>
           <Text style={styles.bullet}>• Usage of SQL queries for migration activities in Database.</Text>
           </View>
-
+ </View>
           {/* Professional Experience */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Experience</Text>
@@ -179,13 +182,9 @@ const Resume = () => (
           <Text style={styles.bullet}>• Developed scripts in Python for automation of repetitive tasks such as data validation and reporting.</Text>
           <Text style={styles.bullet}>• Collaborated with business stakeholders and end-users to define data mapping rules and validate migrated data.</Text>
           <Text style={styles.bullet}>• Implemented BOM migration and assisted in transitioning CAD data between legacy systems and Teamcenter data.</Text>
-          <Text style={styles.bullet}>• Wrote shell scripts and SQL queries for data extraction, cleaning, and migration.</Text>
           <Text style={styles.bullet}>• Utilized SQL Procedures for data extraction from the legacy system performing transformation.</Text>
           <Text style={styles.bullet}>• Supported post-go-live activities, including data validation, user support, and issue resolution.</Text>
           <Text style={styles.bullet}>• Usage of UG Clone for Extraction Utility within Teamcenter enhancing data management related to NX Assemblies.</Text>
-          <Text style={styles.bullet}>• Cleaning Generated Clone files to import in target System.</Text>
-          <Text style={styles.bullet}>• Extracted Assembly Information from source in a bottom to top approach.</Text>
-          <Text style={styles.bullet}>• Utilized TCIN utility for Importing NX Assemblies to streamline product data integration and facilitate seamless collaboration between engineering and manufacturing teams.</Text>
           <Text style={styles.bullet}>• Automated Report Generation for consolidating migration data.</Text>
 		  <Text style={styles.bullet}>• Using IPS Utility to create non-CAD data.</Text>
           <Text style={styles.bullet}>• Utilization of IPS Utility to create Items and Item revisions with datasets from the extracted data.</Text>
@@ -199,9 +198,6 @@ const Resume = () => (
           <Text style={styles.bullet}>• Implemented a script to update existing Teamcenter attributes to new attributes sourced from Teamcenter SQL database table.</Text>
           <Text style={styles.bullet}>• Developed a Teamcenter Utility that operates as a Cronjob, monitoring the state of the Dispatcher Requests and completing Workflow tasks.</Text>
           <Text style={styles.bullet}>• Implementation Of Change Management and Document Management Implementation.</Text>
-          <Text style={styles.bullet}>• Managed and optimized SQL databases to support data migration efforts, improving query performance and data retrieval efficiency.</Text>
-          <Text style={styles.bullet}>• Developed custom SQL scripts and procedures to automate data migration processes and cleanse source data, reducing manual effort and enhancing efficiency during the migration.</Text>
-          <Text style={styles.bullet}>• Migrated As Built Structures and Simulation Objects from the source system to the target system.</Text>
           <Text style={styles.bullet}>• ITK Utilities Development for Validating and Importing Migration Data.</Text>
           <Text style={styles.bullet}>• Resolving Critical Support Tickets related to Workflows, Dispatchers, Change Management, Document Management, Export Control.</Text>
 
@@ -210,12 +206,7 @@ const Resume = () => (
           <Text style={styles.date}>August 2021 - December 2021</Text>
           <Text style={styles.bullet}>• Implemented a Teamcenter Utility that exports any Business Object Properties that are configured in a Batch Script.</Text>
           <Text style={styles.bullet}>• Rule handler to validate Negative Mass Values for Designs which are attached with Different Relations based on the Workflow.</Text>
-          <Text style={styles.bullet}>• Stylesheets configuration includes tables, labels, and visible when usage.</Text>
-          <Text style={styles.bullet}>• Debugging the pool or any issues in the server and taking relevant actions.</Text>
           <Text style={styles.bullet}>• Created custom Handler to update table property which is used to fill custom object values dynamically.</Text>
-          <Text style={styles.bullet}>• Developed Custom Extensions to meet Business Requirements.</Text>
-          <Text style={styles.bullet}>• Custom Standalone Utility for Teamcenter, utilizing XML file to automate the creation of objects with Property Update.</Text>
-          <Text style={styles.bullet}>• Customized a utility to Update Excel with all Problem and Impacted Items analyzing BOM with the Property Values of Configured custom.</Text>
           <Text style={styles.bullet}>• Created new Custom Workflows for different Business Objects as per Business Requirement.</Text>
           <Text style={styles.bullet}>• Managing BMIDE configurations, including GRM Rules, Deep Copy Rules, Display Rules, Custom Conditions, Propagation Rules, Overlay Icon, and other configurations. Created custom Business objects, Relations, LOV’s (classic, batch, dynamic), properties on Business objects.</Text>
             </View>
