@@ -14,24 +14,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   profilePic: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
+    width: 100,
+    height: 100,
+    borderRadius: 50,
     marginRight: 20,
   },
   name: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   title: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#666666',
-    marginBottom: 10,
+    marginBottom: 5,
     textAlign: 'center',
   },
   contact: {
-    fontSize: 12,
+    fontSize: 10,
     color: '#333333',
     marginBottom: 10,
     textAlign: 'center',
@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   sectionTitle: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 5,
     backgroundColor: '#f5f5f5',
     padding: 5,
     fontWeight: 'bold',
   },
   content: {
-    fontSize: 10,
+    fontSize: 9,
     lineHeight: 1.4,
   },
   bullet: {
@@ -64,20 +64,20 @@ const styles = StyleSheet.create({
     textIndent: -10,
   },
   jobTitle: {
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: 'bold',
     marginBottom: 2,
     color: '#333333',
   },
   company: {
-    fontSize: 10,
+    fontSize: 9,
     fontStyle: 'italic',
     fontWeight: 'bold',
     marginBottom: 2,
     color: '#007BFF',
   },
   date: {
-    fontSize: 10,
+    fontSize: 9,
     fontWeight: 'bold',
     marginBottom: 2,
     color: '#333333',
@@ -85,8 +85,11 @@ const styles = StyleSheet.create({
   declaration: {
     marginTop: 20,
     textAlign: 'center',
-    fontSize: 10,
+    fontSize: 9,
     fontStyle: 'italic',
+  },
+  educationItem: {
+    marginBottom: 5,
   },
 });
 
@@ -126,10 +129,26 @@ const Resume = () => (
           {/* Education */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Education</Text>
-            <Text style={styles.bullet}>MCA, JNTU Kakinada | 2021 | CGPA: 7.37/10</Text>
-            <Text style={styles.bullet}>BSc, Adikavi Nanaya University | 2019 | CGPA: 3.35/5</Text>
-            <Text style={styles.bullet}>Intermediate, Sri Sidhartha Jr College | 2015 | 75.9%</Text>
-            <Text style={styles.bullet}>SSC, Little Buds Public School | 2013 | CGPA: 9.0/10</Text>
+            <View style={styles.educationItem}>
+              <Text style={styles.bullet}>MCA, JNTU Kakinada</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2021</Text>
+              <Text style={styles.bullet}>Percentage: CGPA 7.37/10</Text>
+            </View>
+            <View style={styles.educationItem}>
+              <Text style={styles.bullet}>BSc, Adikavi Nanaya University</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2019</Text>
+              <Text style={styles.bullet}>Percentage: CGPA 3.35/5</Text>
+            </View>
+            <View style={styles.educationItem}>
+              <Text style={styles.bullet}>Intermediate, Sri Sidhartha Jr College</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2015</Text>
+              <Text style={styles.bullet}>Percentage: 75.9%</Text>
+            </View>
+            <View style={styles.educationItem}>
+              <Text style={styles.bullet}>SSC, Little Buds Public School</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2013</Text>
+              <Text style={styles.bullet}>Percentage: CGPA 9.0/10</Text>
+            </View>
           </View>
         </View>
 
