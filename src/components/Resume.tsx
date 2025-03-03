@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 15,
-    backgroundColor: '#007BFF',
+    backgroundColor: '#0056b3',
     borderRadius: 8,
     marginBottom: 20,
   },
@@ -87,6 +87,9 @@ const styles = StyleSheet.create({
     fontSize: 9,
     fontStyle: 'italic',
   },
+  section: {
+    marginBottom: 10,
+  },
 });
 
 const Resume = () => (
@@ -104,26 +107,70 @@ const Resume = () => (
 
       <View style={{ flexDirection: 'row' }}>
         <View style={styles.leftColumn}>
+          {/* Technical Skills */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Technical Skills</Text>
-            <Text style={styles.bullet}>• Java, Python, C++, scripting languages</Text>
-            <Text style={styles.bullet}>• Teamcenter 14.X, AWC 6.X</Text>
-            <Text style={styles.bullet}>• MS SQL Server, Oracle</Text>
+            <View style={styles.content}>
+              <Text style={styles.company}>Programming Languages:</Text>
+              <Text style={styles.bullet}>Java</Text>
+              <Text style={styles.bullet}>HTML</Text>
+              <Text style={styles.bullet}>C</Text>
+              <Text style={styles.bullet}>C++</Text>
+              <Text style={styles.bullet}>Powershell</Text>
+              <Text style={styles.bullet}>Batch Scripting</Text>
+
+              <Text style={styles.company}>PLM Tools:</Text>
+              <Text style={styles.bullet}>Teamcenter 12.4.X</Text>
+              <Text style={styles.bullet}>AWC 5.X</Text>
+
+              <Text style={styles.company}>Database Management:</Text>
+              <Text style={styles.bullet}>MS SQL Server</Text>
+              <Text style={styles.bullet}>Oracle</Text>
+            </View>
           </View>
+
+          {/* Achievements */}
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Achievements</Text>
+            <Text style={styles.bullet}>• Awarded Employee of the Year for three consecutive years (2021, 2022, 2023) in recognition of excellence in PLM implementation, problem-solving, and technical leadership.</Text>
+            <Text style={styles.bullet}>• In 2024, traveled to Germany as a **Migration Consultant** for a Siemens project, contributing to critical data migration and system integration.</Text>
+          </View>
+
+          {/* Education */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Education</Text>
-            <Text style={styles.bullet}>• MCA, JNTU Kakinada (2021) - CGPA: 7.37/10</Text>
-            <Text style={styles.bullet}>• BSc, Adikavi Nanaya University (2019) - CGPA: 3.35/5</Text>
+            <View style={styles.content}>
+              <Text style={styles.company}>MCA, JNTU Kakinada</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2021</Text>
+              <Text style={styles.bullet}>CGPA: 7.37/10</Text>
+
+              <Text style={styles.company}>BSc, Adikavi Nanaya University</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2019</Text>
+              <Text style={styles.bullet}>CGPA: 3.35/5</Text>
+
+              <Text style={styles.company}>Intermediate, Sri Sidhartha Jr College</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2015</Text>
+              <Text style={styles.bullet}>Percentage: 75.9%</Text>
+
+              <Text style={styles.company}>SSC, Little Buds Public School</Text>
+              <Text style={styles.bullet}>Passed Out Year: 2013</Text>
+              <Text style={styles.bullet}>CGPA: 9.0/10</Text>
+            </View>
           </View>
         </View>
 
+        {/* Right Column */}
         <View style={styles.rightColumn}>
+          {/* Professional Summary */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Summary</Text>
-            <Text style={styles.bullet}>• Experienced in Teamcenter development and migration.</Text>
-            <Text style={styles.bullet}>• Skilled in automation and workflow customization.</Text>
+            <Text style={styles.bullet}>• Strong hands-on experience in Development and Migration of Siemens Teamcenter.</Text>
+            <Text style={styles.bullet}>• Skilled in root cause analysis, requirements gathering, and testing.</Text>
+            <Text style={styles.bullet}>• Developed migration plans and timelines to ensure seamless transitions.</Text>
+            <Text style={styles.bullet}>• Collaborated with stakeholders to resolve issues during migration.</Text>
           </View>
-       {/* Professional Experience */}
+
+          {/* Professional Experience */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Experience</Text>
             <View style={styles.content}>
@@ -134,7 +181,6 @@ const Resume = () => (
               <Text style={styles.bullet}>• Collaborated with stakeholders to define data mapping rules.</Text>
               <Text style={styles.bullet}>• Assisted in transitioning CAD data between legacy systems and Teamcenter.</Text>
               <Text style={styles.bullet}>• Supported post-go-live activities, including data validation.</Text>
-              <Text style={{ marginBottom: 10 }} /> {/* Empty Text for spacing */}
 
               <Text style={styles.company}>Lilium GmbH</Text>
               <Text style={styles.jobTitle}>Developer</Text>
@@ -142,7 +188,6 @@ const Resume = () => (
               <Text style={styles.bullet}>• Developed custom handlers for Teamcenter workflows.</Text>
               <Text style={styles.bullet}>• Implemented scripts to update Teamcenter attributes.</Text>
               <Text style={styles.bullet}>• Managed SQL databases to support data migration efforts.</Text>
-              <Text style={{ marginBottom: 10 }} /> {/* Empty Text for spacing */}
 
               <Text style={styles.company}>SBG-SMIT</Text>
               <Text style={styles.jobTitle}>Developer</Text>
