@@ -132,8 +132,8 @@ const Resume = () => (
           {/* Achievements */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Achievements</Text>
-            <Text style={styles.bullet}>• Awarded Employee of the Year for three consecutive years (2021, 2022, 2023) in recognition of excellence in PLM implementation, problem-solving, and technical leadership.</Text>
-            <Text style={styles.bullet}>• In 2024, traveled to Germany as a **Migration Consultant** for a Siemens project, contributing to critical data migration and system integration.</Text>
+            <Text style={styles.bullet}>• Employee of the Year (2021-2023) for excellence in PLM implementation.</Text>
+            <Text style={styles.bullet}>• Migration Consultant for Siemens project in Germany (2024).</Text>
           </View>
 
           {/* Education */}
@@ -141,20 +141,16 @@ const Resume = () => (
             <Text style={styles.sectionTitle}>Education</Text>
             <View style={styles.content}>
               <Text style={styles.company}>MCA, JNTU Kakinada</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2021</Text>
-              <Text style={styles.bullet}>CGPA: 7.37/10</Text>
+              <Text style={styles.bullet}>Year: 2021, CGPA: 7.37/10</Text>
 
               <Text style={styles.company}>BSc, Adikavi Nanaya University</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2019</Text>
-              <Text style={styles.bullet}>CGPA: 3.35/5</Text>
+              <Text style={styles.bullet}>Year: 2019, CGPA: 3.35/5</Text>
 
               <Text style={styles.company}>Intermediate, Sri Sidhartha Jr College</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2015</Text>
-              <Text style={styles.bullet}>Percentage: 75.9%</Text>
+              <Text style={styles.bullet}>Year: 2015, Percentage: 75.9%</Text>
 
               <Text style={styles.company}>SSC, Little Buds Public School</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2013</Text>
-              <Text style={styles.bullet}>CGPA: 9.0/10</Text>
+              <Text style={styles.bullet}>Year: 2013, CGPA: 9.0/10</Text>
             </View>
           </View>
         </View>
@@ -164,10 +160,10 @@ const Resume = () => (
           {/* Professional Summary */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Summary</Text>
-            <Text style={styles.bullet}>• Strong hands-on experience in Development and Migration of Siemens Teamcenter.</Text>
-            <Text style={styles.bullet}>• Skilled in root cause analysis, requirements gathering, and testing.</Text>
-            <Text style={styles.bullet}>• Developed migration plans and timelines to ensure seamless transitions.</Text>
-            <Text style={styles.bullet}>• Collaborated with stakeholders to resolve issues during migration.</Text>
+            <Text style={styles.bullet}>• Hands-on experience in Siemens Teamcenter development and migration.</Text>
+            <Text style={styles.bullet}>• Skilled in root cause analysis and requirements gathering.</Text>
+            <Text style={styles.bullet}>• Developed migration plans for seamless transitions.</Text>
+            <Text style={styles.bullet}>• Collaborated with stakeholders to resolve migration issues.</Text>
           </View>
 
           {/* Professional Experience */}
@@ -177,24 +173,24 @@ const Resume = () => (
               <Text style={styles.company}>Siemens Mobility</Text>
               <Text style={styles.jobTitle}>PLM Data Migration Consultant</Text>
               <Text style={styles.date}>August 2023 - Present</Text>
-              <Text style={styles.bullet}>• Developed scripts in Python for automation of data validation.</Text>
-              <Text style={styles.bullet}>• Collaborated with stakeholders to define data mapping rules.</Text>
-              <Text style={styles.bullet}>• Assisted in transitioning CAD data between legacy systems and Teamcenter.</Text>
-              <Text style={styles.bullet}>• Supported post-go-live activities, including data validation.</Text>
+              <Text style={styles.bullet}>• Developed Python scripts for data validation automation.</Text>
+              <Text style={styles.bullet}>• Defined data mapping rules with stakeholders.</Text>
+              <Text style={styles.bullet}>• Assisted in CAD data transition to Teamcenter.</Text>
+              <Text style={styles.bullet}>• Supported post-go-live data validation activities.</Text>
 
               <Text style={styles.company}>Lilium GmbH</Text>
               <Text style={styles.jobTitle}>Developer</Text>
               <Text style={styles.date}>December 2021 - August 2023</Text>
               <Text style={styles.bullet}>• Developed custom handlers for Teamcenter workflows.</Text>
-              <Text style={styles.bullet}>• Implemented scripts to update Teamcenter attributes.</Text>
-              <Text style={styles.bullet}>• Managed SQL databases to support data migration efforts.</Text>
+              <Text style={styles.bullet}>• Updated Teamcenter attributes via scripts.</Text>
+              <Text style={styles.bullet}>• Managed SQL databases for migration efforts.</Text>
 
               <Text style={styles.company}>SBG-SMIT</Text>
               <Text style={styles.jobTitle}>Developer</Text>
               <Text style={styles.date}>August 2021 - December 2021</Text>
-              <Text style={styles.bullet}>• Implemented a Teamcenter Utility that exports any Business Object Properties.</Text>
-              <Text style={styles.bullet}>• Rule handler to validate Negative Mass Values for Designs.</Text>
-              <Text style={styles.bullet}>• Created custom Handler to update table property dynamically.</Text>
+              <Text style={styles.bullet}>• Implemented Teamcenter utility for exporting properties.</Text>
+              <Text style={styles.bullet}>• Validated negative mass values for designs.</Text>
+              <Text style={styles.bullet}>• Created custom handlers for dynamic property updates.</Text>
             </View>
           </View>
         </View>
