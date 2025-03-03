@@ -1,65 +1,64 @@
 import React from 'react';
 import { Document, Page, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
 
-// Create styles
 const styles = StyleSheet.create({
   page: {
     padding: 20,
     fontFamily: 'Helvetica',
+    backgroundColor: '#f9f9f9',
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
     justifyContent: 'center',
+    padding: 15,
+    backgroundColor: '#007BFF',
+    borderRadius: 8,
+    marginBottom: 20,
   },
   profilePic: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    marginRight: 20,
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    marginRight: 15,
   },
   name: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: 'bold',
-    textAlign: 'center',
+    color: 'white',
   },
   title: {
-    fontSize: 14,
-    color: '#666666',
-    marginBottom: 5,
-    textAlign: 'center',
+    fontSize: 12,
+    color: 'white',
   },
   contact: {
     fontSize: 10,
-    color: '#333333',
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  leftColumn: {
-    width: '40%',
-    paddingRight: 10,
-  },
-  rightColumn: {
-    width: '60%',
-    paddingLeft: 10,
-  },
-  section: {
-    marginBottom: 15,
+    color: 'white',
   },
   sectionTitle: {
     fontSize: 12,
     marginBottom: 5,
-    backgroundColor: '#f5f5f5',
-    padding: 5,
+    backgroundColor: '#0056b3',
+    color: 'white',
+    padding: 6,
     fontWeight: 'bold',
+    borderRadius: 4,
+    textAlign: 'center',
+  },
+  leftColumn: {
+    width: '30%',
+    paddingRight: 10,
+  },
+  rightColumn: {
+    width: '70%',
+    paddingLeft: 10,
   },
   content: {
     fontSize: 9,
     lineHeight: 1.4,
   },
   bullet: {
-    marginBottom: 5,
+    marginBottom: 4,
     marginLeft: 10,
     textIndent: -10,
   },
@@ -88,82 +87,43 @@ const styles = StyleSheet.create({
     fontSize: 9,
     fontStyle: 'italic',
   },
-  educationItem: {
-    marginBottom: 5,
-  },
 });
 
-// Create Document Component
 const Resume = () => (
   <Document>
     <Page size="A4" style={styles.page}>
-      {/* Header */}
       <View style={styles.header}>
         <Image src="/ProfilePic.png" style={styles.profilePic} />
         <View>
           <Text style={styles.name}>Sai Umesh Chandra Katta</Text>
           <Text style={styles.title}>PLM Implementation Consultant</Text>
           <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
+          <Text style={styles.contact}>Phone: +91 6301112919</Text>
         </View>
       </View>
 
-      {/* Content Section */}
       <View style={{ flexDirection: 'row' }}>
-        {/* Left Column */}
         <View style={styles.leftColumn}>
-          {/* Technical Skills */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Technical Skills</Text>
-            <Text style={styles.bullet}>• Java, HTML, C, C++, Powershell, Batch Scripting</Text>
-            <Text style={styles.bullet}>• Teamcenter 12.4.X, AWC 5.X</Text>
+            <Text style={styles.bullet}>• Java, Python, C++, scripting languages</Text>
+            <Text style={styles.bullet}>• Teamcenter 14.X, AWC 6.X</Text>
             <Text style={styles.bullet}>• MS SQL Server, Oracle</Text>
           </View>
-
-          {/* Achievements */}
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Achievements</Text>
-            <Text style={styles.bullet}>• Employee of the Year Award for 2021, 2022, and 2023.</Text>
-            <Text style={styles.bullet}>• Went to Germany in 2024 as Migration Consultant for Siemens Project.</Text>
-          </View>
-
-          {/* Education */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Education</Text>
-            <View style={styles.educationItem}>
-              <Text style={styles.bullet}>MCA, JNTU Kakinada</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2021</Text>
-              <Text style={styles.bullet}>Percentage: CGPA 7.37/10</Text>
-            </View>
-            <View style={styles.educationItem}>
-              <Text style={styles.bullet}>BSc, Adikavi Nanaya University</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2019</Text>
-              <Text style={styles.bullet}>Percentage: CGPA 3.35/5</Text>
-            </View>
-            <View style={styles.educationItem}>
-              <Text style={styles.bullet}>Intermediate, Sri Sidhartha Jr College</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2015</Text>
-              <Text style={styles.bullet}>Percentage: 75.9%</Text>
-            </View>
-            <View style={styles.educationItem}>
-              <Text style={styles.bullet}>SSC, Little Buds Public School</Text>
-              <Text style={styles.bullet}>Passed Out Year: 2013</Text>
-              <Text style={styles.bullet}>Percentage: CGPA 9.0/10</Text>
-            </View>
+            <Text style={styles.bullet}>• MCA, JNTU Kakinada (2021) - CGPA: 7.37/10</Text>
+            <Text style={styles.bullet}>• BSc, Adikavi Nanaya University (2019) - CGPA: 3.35/5</Text>
           </View>
         </View>
 
-        {/* Right Column */}
         <View style={styles.rightColumn}>
-          {/* Professional Summary */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Summary</Text>
-            <Text style={styles.bullet}>• Strong hands-on experience in Development and Migration of Siemens Teamcenter.</Text>
-            <Text style={styles.bullet}>• Skilled in root cause analysis, requirements gathering, and testing.</Text>
-            <Text style={styles.bullet}>• Developed migration plans and timelines to ensure seamless transitions.</Text>
-            <Text style={styles.bullet}>• Collaborated with stakeholders to resolve issues during migration.</Text>
+            <Text style={styles.bullet}>• Experienced in Teamcenter development and migration.</Text>
+            <Text style={styles.bullet}>• Skilled in automation and workflow customization.</Text>
           </View>
-
-          {/* Professional Experience */}
+       {/* Professional Experience */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Experience</Text>
             <View style={styles.content}>
@@ -195,8 +155,7 @@ const Resume = () => (
         </View>
       </View>
 
-      {/* Declaration */}
-      <Text style={styles.declaration}>I hereby declare that the above information is true and correct to the best of my knowledge.</Text>
+      <Text style={styles.declaration}>I hereby declare that the above information is true and correct.</Text>
     </Page>
   </Document>
 );
