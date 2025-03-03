@@ -178,7 +178,7 @@ const Resume = () => (
       <Text style={styles.jobTitle}>PLM Data Migration Consultant</Text>
       <Text style={styles.date}>August 2023 - Present</Text>
       <Text style={styles.bullet}>• Automated data validation and reporting using Python scripts and SQL Procedures for legacy system transformation.</Text>
-      <Text style={styles.bullet}>• Implemented BOM migration and assisted in transitioning CAD data between legacy systems and Teamcenter.</Text>
+       <Text style={styles.bullet}>• Using IPS Utility to create non-CAD data and TCIN utility for Importing NX Assemblies.</Text>
       <Text style={styles.bullet}>• Supported post-go-live activities, including data validation, user support, and issue resolution.</Text>
 
       <Text style={styles.company}>Lilium GmbH</Text>
@@ -186,7 +186,7 @@ const Resume = () => (
       <Text style={styles.date}>December 2021 - August 2023</Text>
       <Text style={styles.bullet}>• Developed a custom Translator in Dispatcher to attach a generated Excel to Change Objects.</Text>
       <Text style={styles.bullet}>• Created a Teamcenter Utility that runs as a Cronjob, monitoring Dispatcher Requests and automating Workflow task completion.</Text>
-      <Text style={styles.bullet}>• Implemented Change Management and Document Management solutions while resolving critical support tickets.</Text>
+      <Text style={styles.bullet}>• Implemented Change Management, Document Management and Export Control solutions and resolving critical support tickets.</Text>
 
       <Text style={styles.company}>SBG-SMIT</Text>
       <Text style={styles.jobTitle}>Developer</Text>
