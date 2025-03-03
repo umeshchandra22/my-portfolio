@@ -132,9 +132,11 @@ const Resume = () => (
           {/* Achievements */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Achievements</Text>
+            <View style={styles.content}>
             <Text style={styles.bullet}>• Employee of the Year (2021-2023) for excellence in PLM implementation.</Text>
             <Text style={styles.bullet}>• Migration Consultant for Siemens project in Germany (2024).</Text>
           </View>
+         </View>
 
           {/* Education */}
           <View style={styles.section}>
@@ -160,11 +162,13 @@ const Resume = () => (
           {/* Professional Summary */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Professional Summary</Text>
+          <View style={styles.content}>
             <Text style={styles.bullet}>• Hands-on experience in Siemens Teamcenter development and migration.</Text>
             <Text style={styles.bullet}>• Skilled in root cause analysis and requirements gathering.</Text>
             <Text style={styles.bullet}>• Developed migration plans for seamless transitions.</Text>
             <Text style={styles.bullet}>• Collaborated with stakeholders to resolve migration issues.</Text>
           </View>
+         </View>
 
           {/* Professional Experience */}
           <View style={styles.section}>
