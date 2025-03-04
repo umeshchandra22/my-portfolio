@@ -102,6 +102,7 @@ const Resume = () => (
           <Text style={styles.title}>PLM Implementation Consultant</Text>
           <Text style={styles.contact}>Email: ksaiumeshchandra@gmail.com</Text>
           <Text style={styles.contact}>Phone: +91 6301112919</Text>
+	 <Text style={styles.contact}>Website: www.saiumeshchandra.com</Text>	
         </View>
       </View>
 
