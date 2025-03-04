@@ -163,6 +163,7 @@ const Resume = () => (
   <View style={styles.section}>
     <Text style={styles.sectionTitle}>Professional Summary</Text>
     <View style={styles.content}>
+      <Text style={styles.bullet}>• Over 3 years of experience in the implementation and development of Teamcenter systems.</Text>
       <Text style={styles.bullet}>• Strong hands-on experience in Development, Configuration, and Migration of Siemens Teamcenter using IPS Upload, NX Utilities, SQL queries, and UG Clone for NX Assemblies.</Text>
       <Text style={styles.bullet}>• Collaborated with IT, business stakeholders, and vendors to gather requirements, resolve issues, and ensure alignment during migration.</Text>
       <Text style={styles.bullet}>• Expertise in implementing Teamcenter utilities: process dispatcher requests, automate workflow task completion, export business object properties, and XML processing.</Text>
@@ -173,6 +174,16 @@ const Resume = () => (
   {/* Professional Experience */}
   <View style={styles.section}>
     <Text style={styles.sectionTitle}>Professional Experience</Text>
+    <View style={styles.content}>
+         <Text style={styles.jobTitle}>PLM Implementation Engineer</Text>
+      <Text style={styles.date}>August 2021 - Present</Text>
+     <Text style={styles.bullet}>Employed as an Implementation Engineer at Klog Solutions, Hyderabad, India.</Text>
+     </View>
+   </View>
+
+{/* Professional Experience */}
+  <View style={styles.section}>
+    <Text style={styles.sectionTitle}>Projects</Text>
     <View style={styles.content}>
       <Text style={styles.company}>Siemens Mobility</Text>
       <Text style={styles.jobTitle}>PLM Data Migration Consultant</Text>
@@ -196,6 +207,7 @@ const Resume = () => (
      </View>
    </View>
   </View>
+ 
 </View>
 
       <Text style={styles.declaration}>I hereby declare that the above information is true and correct.</Text>
