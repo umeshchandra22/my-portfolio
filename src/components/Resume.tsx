@@ -121,8 +121,8 @@ const Resume = () => (
               <Text style={styles.bullet}>Batch Scripting</Text>
 
               <Text style={styles.company}>PLM Tools:</Text>
-              <Text style={styles.bullet}>Teamcenter 12.4.X</Text>
-              <Text style={styles.bullet}>AWC 5.X</Text>
+              <Text style={styles.bullet}>Teamcenter 12.4.X,14.X</Text>
+              <Text style={styles.bullet}>AWC 5.X,6.X</Text>
 
               <Text style={styles.company}>Database Management:</Text>
               <Text style={styles.bullet}>MS SQL Server</Text>
