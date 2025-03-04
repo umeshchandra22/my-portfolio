@@ -239,9 +239,9 @@ function App() {
               <li>Skilled in performing root cause analysis, gathering requirements, conducting impact analysis, executing testing, and coordinating production releases.</li>
               <li>Crafted detailed migration plans, timelines and risk assessments to ensure seamless data transitions while minimizing system downtime and disruption.</li>
               <li>Worked closely with IT, business stakeholders and third-party vendors to gather requirements, resolve issues, and ensure alignment during migration.</li>
-              <li>Hands-on experience in implementing various Teamcenter utilities: process dispatcher requests and automate the workflow task completion, export business object properties, reading of XML's and to the create the objects update properties.</li>
+              <li>Hands-on experience in implementing various Teamcenter utilities: process dispatcher requests and automate the workflow task completion.</li>
               <li>Implemented/enabled custom Dispatcher translator, WF Action/Rule handlers, extensions for Teamcenter.</li>
-              <li>Usage of SQL queries for migration Activities in Database.</li>
+              <li>Usage of SQL queries and SQL Procedures for migration Activities in Database.</li>
             </ul>
           </section>
         )}
@@ -260,14 +260,12 @@ function App() {
       </div>
       <ul className="list-disc list-inside text-gray-600 space-y-3">
         <li>Developed scripts in Python for automation of repetitive tasks such as data validation and reporting</li>
-        <li>Developed ITK utilities for validating data integrity, correcting issues, and updating attributes and statuses post-migration</li>
+        <li>Developed ITK utilities for validating data integrity, correcting issues, updating attributes and status on post-migration</li>
         <li>Collaborated with business stakeholders to define data mapping rules and validate migrated data</li>
-        <li>Implemented BOM migration and assisted in transitioning CAD data between legacy systems and Teamcenter</li>
         <li>Wrote shell scripts and SQL queries for data extraction, cleaning, and migration</li>
         <li>Utilized SQL procedures for data extraction and transformation</li>
         <li>Managed and optimized SQL databases for data migration efforts</li>
         <li>Supported post-go-live activities including data validation, user support, and issue resolution</li>
-        <li>Assisted in configuring and deploying Teamcenter modules such as Change Management, Document Management, and BOM Management</li>
         <li>Monitored IPS upload utility, configured error handling, and performed root cause analysis for mismatches</li>
         <li>Utilized UG Clone for extracting NX assemblies within Teamcenter</li>
         <li>Cleaned generated Clone files for importing into the target system</li>
@@ -320,7 +318,6 @@ function App() {
         <li>Implemented a Teamcenter utility to export business object properties configured in a batch script</li>
         <li>Developed a rule handler to validate negative mass values for designs attached with different relations</li>
         <li>Configured stylesheets including tables, labels, and visibility settings</li>
-        <li>Debugged pool and server issues, taking relevant corrective actions</li>
         <li>Developed a custom handler to dynamically update table properties</li>
         <li>Created custom extensions to meet business requirements</li>
         <li>Developed a standalone utility using XML to automate object creation with property updates</li>
